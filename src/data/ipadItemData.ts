@@ -1,6 +1,6 @@
 import { AppleItem } from "../model/AppleItem";
 
-export const macItemData: AppleItem[] = [
+export const ipadItemData: AppleItem[] = [
     { imageUrl: "", name: "iPad Pro", description: "The ultimate iPad experience.", price: 799 },
     { imageUrl: "", name: "iPad Air", description: "Powerful. Colorful. Wonderful.", price: 599 },
     {
