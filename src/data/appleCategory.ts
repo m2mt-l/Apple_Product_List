@@ -1,11 +1,6 @@
-interface Category {
-    mac: string;
-    ipad: string;
-    iphone: string;
-    watch: string;
-}
+import { AppleCategory } from "../model/AppleCategory";
 
-export const appleCategory: Category = {
+export const appleCategory: AppleCategory = {
     mac: "Mac",
     ipad: "iPad",
     iphone: "iPhone",
