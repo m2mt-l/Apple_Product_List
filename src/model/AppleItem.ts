@@ -1,4 +1,4 @@
-export interface MacItem {
+export interface AppleItem {
     imageUrl: string;
     name: string;
     description: string;

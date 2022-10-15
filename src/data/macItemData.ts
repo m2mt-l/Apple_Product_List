@@ -1,6 +1,6 @@
-import { MacItem } from "../model/Item";
+import { AppleItem } from "../model/AppleItem";
 
-export const macItemData: MacItem[] = [
+export const macItemData: AppleItem[] = [
     { imageUrl: "", name: "MacBook Air", description: "M1", price: 999 },
     { imageUrl: "", name: "MacBook Air", description: "M2", price: 1199 },
     { imageUrl: "", name: "MacBook Pro", description: "", price: 1299 },
