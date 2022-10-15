@@ -1,6 +1,4 @@
-import { AppleCategory } from "../model/AppleCategory";
-
-export const appleCategory: AppleCategory = {
+export const appleCategory: { [key: string]: string } = {
     mac: "Mac",
     ipad: "iPad",
     iphone: "iPhone",
