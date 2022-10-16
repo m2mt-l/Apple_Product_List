@@ -2,16 +2,18 @@ import React from "react";
 import Item from "./Item";
 import { AppleCategory } from "../model/AppleCategory";
 import { AppleItem } from "../model/AppleItem";
+import { productList } from "../data/productList";
 import { macItemData } from "../data/macItemData";
-
+import { AppleItemList } from "../model/AppleItemList";
 class Category extends React.Component<AppleCategory, AppleItem> {
     render(): React.ReactNode {
         const name = this.props.name;
+        const item = productList[name as keyof AppleItemList];
         return (
             <div className="text-2xl font-bold">
                 {name}
                 <div className="flex flex-start container mx-auto overflow-x-auto">
-                    {macItemData.map((item) => {
+                    {item.map((item) => {
                         return (
                             <Item
                                 key={item.name}
