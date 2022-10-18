@@ -3,16 +3,15 @@ import Item from "./Item";
 import { AppleCategory } from "../model/AppleCategory";
 import { AppleItem } from "../model/AppleItem";
 import { productList } from "../data/productList";
-import { macItemData } from "../data/macItemData";
 import { AppleItemList } from "../model/AppleItemList";
 class Category extends React.Component<AppleCategory, AppleItem> {
     render(): React.ReactNode {
         const name = this.props.name;
         const item = productList[name as keyof AppleItemList];
         return (
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold mt-3">
                 {name}
-                <div className="flex flex-start container mx-auto overflow-x-auto">
+                <div className="bg-cyan-400 flex flex-center mx-auto overflow-x-auto">
                     {item.map((item) => {
                         return (
                             <Item
