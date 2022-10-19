@@ -11,7 +11,7 @@ class Category extends React.Component<AppleCategory, AppleItem> {
         return (
             <div className="text-2xl font-bold mt-3">
                 {name}
-                <div className="bg-cyan-400 flex flex-center mx-auto overflow-x-auto">
+                <div className="flex flex-center mx-auto overflow-x-auto">
                     {item.map((item) => {
                         return (
                             <Item
